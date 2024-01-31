@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up form | Odin Project</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+  <script type="module" src="./src/script.js"></script>
+</head>
+<body>
+  <div class="side">
+    <div class="dark-overlay">
+      <img src="./images/kisspng-white-logo-royalty-free-falcon-5ad685e95c3574.8236003015240084253777.png" alt="logo" class="logo" />
+      <span class="name">New Company</span>
+    </div>
+    <p class="credit">
+      Photo by <a href="http://unsplash.com/@roberts_richie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Richie Roberts</a>
+      on <a href="http://unsplash.com/photos/white-printer-paper-on-brown-and-white-textile-fYjVHbYGYl8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </p>
+  </div>
+  <div class="main">
+    <div class="interlude">
+      This is not a real online service! You know you need something
+      like this in your life to help you to realize your deepest dreams.
+      Sign-up <i>now</i> to get started.<br />
+      <br />You <i>know</i> you want to!
+    </div>
+    <div class="forms-background">
+      <h3 class="form-heading">Let's do this!</h3>
+      <div class="forms">
+        <form id="signupForm" action="" method="post">
+          <span class="full-name">
+            <span>
+              First Name<br/>
+              <input type="text" name="first name" id="first-name">
+            </span>
+            <span>
+              Last Name<br/>
+              <input type="text" name="last name" id="last-name">
+            </span>
+          </span>
+          <span class="contact">
+            <span>Email<br/><input type="email" name="email" id="email"></span>
+            <span>Phone Number<br/><input type="tel" name="phone" id="phone-number"></span>
+          </span>
+          <span class="password">
+            <span>
+              Password<br/>
+              <input type="password" name="password" class="error" id="password" required><br/>
+              <span class="no-match" id="no-match">*Passwords do not match</span>
+            </span>
+            <span>
+              Confirm Password<br/>
+              <input type="password" name="Confirm" class="error" id="confirm-password" required>
+            </span>
+          </span>
+        </form>
+      </div>
+    </div>
+    <button class="btn-create-account">Create Account</button>
+    <p class="end">Already have an account? <a href="#" class="log-in">Log in</a></p>
+  </div>
+</body>
+</html>
