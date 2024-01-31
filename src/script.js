@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(jsonData);
             
             // redirect to registration successful page
-            window.location.replace("./submit_registration.html");
+            // window.location.replace("./submit_registration.html");
 
             // Add code here to: Send data to the server & handle response/errors
        }
