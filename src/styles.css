@@ -93,7 +93,7 @@ input[type="tel"] {
 }
 
 input:focus {
-    border: 1px solid #C6AC8F; /* change to blue for odin specs */
+    border: 1px solid #C6AC8F; /* blue for odin specs */
     outline: none;
     box-shadow: 3px 2px 4px rgb(34, 51, 59, 0.5);
 }
@@ -114,6 +114,11 @@ input.error {
     font-size: 0.5rem;
     color: red;
     margin: 0;
+}
+
+.required {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
 }
 
 .full-name,
@@ -176,6 +181,10 @@ a.log-in:visited {
     input[type="tel"] {
         width: 12rem;
     }
+
+    .required {
+        margin-left: 8rem;
+    }
 }
 
 @media (min-width: 326px) and (max-width: 490px) {
@@ -190,7 +199,11 @@ a.log-in:visited {
 
     .dark-overlay {
         width: 100vw;
-    } 
+    }
+
+    .required {
+        margin-left: 12rem;
+    }
 }
 
 @media (min-width: 491px) {
@@ -206,5 +219,9 @@ a.log-in:visited {
         transform: translate(-50%, -50%);
         width: calc(33.3vw);
         height: auto;
+    }
+
+    .required {
+        margin-left: 12rem;
     }
 }
