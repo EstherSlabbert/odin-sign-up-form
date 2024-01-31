@@ -11,7 +11,7 @@
 <body>
   <div class="side">
     <div class="dark-overlay">
-      <img src="./images/kisspng-white-logo-royalty-free-falcon-5ad685e95c3574.8236003015240084253777.png" alt="logo" class="logo" />
+      <img src="./kisspng-white-logo-royalty-free-falcon-5ad685e95c3574.8236003015240084253777.png" alt="logo" class="logo" />
       <span class="name">New Company</span>
     </div>
     <p class="credit">
@@ -29,30 +29,37 @@
     <div class="forms-background">
       <h3 class="form-heading">Let's do this!</h3>
       <div class="forms">
-        <form id="signupForm" action="" method="post">
+        <form id="signupForm" action="/submit_registration" method="post">
           <span class="full-name">
             <span>
-              First Name<br/>
-              <input type="text" name="first name" id="first-name">
+              <label for="first-name">First Name</label><br />
+              <input type="text" name="first-name" id="first-name">
             </span>
             <span>
-              Last Name<br/>
-              <input type="text" name="last name" id="last-name">
+              <label for="last-name">Last Name</label><br />
+              <input type="text" name="last-name" id="last-name">
             </span>
           </span>
           <span class="contact">
-            <span>Email<br/><input type="email" name="email" id="email"></span>
-            <span>Phone Number<br/><input type="tel" name="phone" id="phone-number"></span>
+            <span>
+              <label for="email">Email*</label><br/>
+              <input type="email" name="email" id="email" required>
+            </span>
+            <span>
+              <label for="phone-number">Phone Number</label><br />
+              <input type="tel" name="phone-number" id="phone-number">
+            </span>
           </span>
           <span class="password">
             <span>
-              Password<br/>
-              <input type="password" name="password" class="error" id="password" required><br/>
+              <label for="password">Password*</label><br />
+              <input type="password" name="password" class="error" id="password" required><br />
               <span class="no-match" id="no-match">*Passwords do not match</span>
             </span>
             <span>
-              Confirm Password<br/>
-              <input type="password" name="Confirm" class="error" id="confirm-password" required>
+              <label for="confirm-password">Confirm Password*</label><br />
+              <input type="password" name="confirm-password" class="error" id="confirm-password" required><br />
+              <span class="required">*Required fields</span>
             </span>
           </span>
         </form>
