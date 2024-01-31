@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Monsieur La Doulaise';
+    src: url('../fonts/Monsieur_La_Doulaise/MonsieurLaDoulaise-Regular.ttf') format('truetype');
+}
+  
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 1;
+    background: url("../images/richie-roberts-fYjVHbYGYl8-unsplash.jpg") center/cover no-repeat;
+    align-items: left;
+    justify-content: left;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.name {
+    color: white;
+    font-family: 'Monsieur La Doulaise';
+    font-size: 2rem;
+    padding: 0.4rem 0.2rem 0.3rem 0rem;
+}
+
+p.credit {
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p.credit>a {
+    color: white;
+}
+
+.main {
+    flex: 2;
+    background-color: #EAE0D5;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.interlude {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2rem 7rem 2rem 2rem;
+}
+
+.forms-background {
+    background-color: white;
+    padding: 1rem;
+}
+
+.form-heading,
+.forms {
+    margin: 1rem;
+}
+
+.forms {
+    font-family: Staatliches;
+    font-size: 0.7rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 15rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #EAE0D5;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid #C6AC8F; /* change to blue for odin specs */
+    outline: none;
+    box-shadow: 3px 2px 4px rgb(34, 51, 59, 0.5);
+}
+
+/* for if you do not want to use 'error' class */
+/* input[type="password"]:not(:placeholder-shown) {
+    border: 1px solid red;
+    margin-bottom: 0;
+} */
+
+input.error {
+    border: 1px solid red;
+    margin-bottom: 0;
+}
+
+#no-match {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    color: red;
+    margin: 0;
+}
+
+.full-name,
+.contact,
+.password {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+}
+
+.btn-create-account {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 2rem 0.5rem 2rem;
+    padding: 0.6rem 2.5rem;
+    color: white;
+    background-color: #5E503F;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+a.log-in {
+    color: #5E503F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.log-in:visited {
+    color: #719AAD;
+}
+
+.end {
+    font-size: 0.7rem;
+    margin: 0.5rem 2rem;
+}
+
+@media (max-width: 325px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side {
+        width: 100vw;
+    }
+
+    .dark-overlay {
+        width: 100vw + 10vw;
+    }
+
+    .forms-background {
+        max-width: 100vw;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 326px) and (max-width: 490px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side {
+        width: 100vw;
+    }
+
+    .dark-overlay {
+        width: 100vw;
+    } 
+}
+
+@media (min-width: 491px) {
+    .side {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dark-overlay {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(33.3vw);
+        height: auto;
+    }
+}
